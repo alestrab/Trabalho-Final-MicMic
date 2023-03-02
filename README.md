@@ -1,8 +1,8 @@
 # Trabalho-Final-MicMic
 Trabalho 7 da Disciplina de Microntroladores e Microprocessadores, Período 2022/2 - Engenharia Física - UFSCar;\
 Grupo D, Professor da Disciplina: Dr. Ricardo Menotti\
-    Integrantes &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp RA\
-Alexandre Strabello                  770076\
+Integrantes___________________________  RA\
+Alexandre Strabello______________________ 770076\
 Gabriel Lemes Molizane Almeida       770097\
 Sarah Brennda Bispo Almeida          770161\
 #-------------------------------------------------\
