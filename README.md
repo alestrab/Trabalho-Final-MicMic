@@ -13,9 +13,9 @@ Objetivos Específicos:\
 Construir um suporte com um grau de liberdade em modelo 3D, com fácil adição de um segundo eixo de rotação;\
 Desenvolvimento de um código para microcontrolador controlando dois servomotores em função da tensão de saída da placa solar;\
  
-#------------------------------------------------\
+#------------------------------------------------
 
-O projeto será separado com base nas quatro semanas disponíveis para sua realização;\
+O projeto será separado com base nas quatro semanas disponíveis para sua realização;
 
 Primeira Semana:\
 Análise de viabilidade, quais componentes serão necessários, especificações sobre suas dimensões, assim como qual microcontrolador será utilizado;\
@@ -35,6 +35,5 @@ Quarta Semana:\
 Correções de problemas;\
 Elaboração de vídeo ou apresentação para a entrega final do projeto;\
 
-#-----------------------------------------------\
-
+#-----------------------------------------------
 
