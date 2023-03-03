@@ -13,6 +13,18 @@ Objetivos Específicos:\
 Construir um suporte com um grau de liberdade em modelo 3D, com fácil adição de um segundo eixo de rotação;\
 Desenvolvimento de um código para microcontrolador controlando dois servomotores em função da tensão de saída da placa solar;
  
+#-----------------------------------------------
+
+A lista inicial de materiais é dada por:
+
+2 servomotores capazes de serem controlados diretamente pelo arduino, sem necessidade de alimentação de placa externa;
+
+Uma mini placa solar de baixa tensão;
+
+Impressora 3D para confecção do suporte para instalação dos motores e da placa;
+
+Para o microcontrolador, será verificada a possbilidade de utilizar uma placa Franzino construída por um dos integrantes do grupo. Contudo, já que a mesma ainda não se encontra presente, na primeira semana será utilizado um Arduino UNO.
+
 #------------------------------------------------
 
 O projeto será separado com base nas quatro semanas disponíveis para sua realização;
@@ -36,4 +48,6 @@ Correções de problemas;\
 Elaboração de vídeo ou apresentação para a entrega final do projeto;
 
 #-----------------------------------------------
+
+
 
