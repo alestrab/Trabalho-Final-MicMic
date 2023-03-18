@@ -1,5 +1,6 @@
 
 //Teste de leitura da placa
+
 int analogPin = A0; 
 int sol = 0; 
 
