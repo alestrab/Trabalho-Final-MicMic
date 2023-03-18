@@ -1,3 +1,5 @@
+// Teste de Rotação do Rotor
+
 void setup() {
   pinMode(22, OUTPUT);    // configura o pino digital 22 como saída
   pinMode(24, OUTPUT);    // configura o pino digital 24 como saída
