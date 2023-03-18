@@ -1,4 +1,4 @@
-// Teste de Rotação do Rotor
+// Teste de Rotação do Rotor - Horário e Anti-horário
 
 void setup() {
   pinMode(22, OUTPUT);    // configura o pino digital 22 como saída
