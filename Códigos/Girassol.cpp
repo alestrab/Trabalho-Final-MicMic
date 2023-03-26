@@ -6,19 +6,18 @@
 #define USE_TIMER_1     false   //Timer utilizado na biblioteca do servomotor
 #define USE_TIMER_2     true    //Timer utilizado para interrupção neste programa
 
-// To be included only in main(), .ino with setup() to avoid `Multiple Definitions` Linker Error
 #include "TimerInterrupt.h"
 
 int passo = 5;                //passo para scan
 int servo = 0;                //graus do servomotor
-unsigned int sol0 = 0;        //iluminacao na posicao atual
-unsigned int sol1 = 0;        //iluminacao na posicao incrementada
-unsigned int sol2 = 0;        //iluminacao na posicao decrementada
-int servo0 = 0;               //posicao inicial do servo
-unsigned int sol[180];        //iluminacao em cada posicao
-int solmax = 0;               //iluminacao maxima
-int dif = 0;                  //diferenca entre iluminacoes
-byte maxIndex = 0;            //indice da maior iluminaca
+unsigned int sol0 = 0;        //iluminação na posição atual
+unsigned int sol1 = 0;        //iluminação na posição incrementada
+unsigned int sol2 = 0;        //iluminação na posição decrementada
+int servo0 = 0;               //posição inicial do servo
+unsigned int sol[180];        //iluminação em cada posicao
+int solmax = 0;               //iluminação máxima
+int dif = 0;                  //diferença entre iluminações
+byte maxIndex = 0;            //índice da maior iluminação
 Servo servo_10;               //servomotor
 int aux = 0;                  //variável auxiliar utilizada para alternar entre os modos de scan e ajuste local
 int N = 50;
