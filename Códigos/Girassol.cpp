@@ -150,7 +150,7 @@ void loop()
 
       //Movimentação do servomotor para a posição de maior intensidade entre sol0 e sol1
       if (sol1>sol0){
-        servo_10.write(servo-passo);
+        servo_10.write(servo+passo);
       }
       if (sol0>=sol1){
         servo_10.write(servo);
