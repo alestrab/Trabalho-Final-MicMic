@@ -17,7 +17,7 @@ Desenvolvimento de um código para microcontrolador controlando dois servomotore
  
 ## Materiais:
 
-2 servomotores SG92R para controle dos eixos de rotação da placa solar;
+2 servomotores SG92R para controle dos eixos de rotação da placa solar; (por questão de disponibilidade foi utilizado um servomotor MG90S)
 
 Mini Placa Solar ZW 110X69, tensão de operação 5 V, 1W;
 
