@@ -68,7 +68,7 @@ O servomotor apresenta limitação de rotação, podendo realizar no máximo um 
 
 ### Montagem do aparato
 
-Os códigos escritos para o funcionamento do sistema necessitam que o cabo de sinal do servmotor esteja contectado no pino A10 do Franzino, enquanto o painel solar precisa estar no pino A2 do mesmo. Além disso, o servomotor deve ser ligado em 5 V, o que é feito através da mesma placa, utilizando os pinos de 5 V e GND; e o painel solar também deve ser aterrado na mesma placa. Essa, por sua vez, também deve ser alimentada por uma fonte de tensão contínua de 12 V.
+Os códigos escritos para o funcionamento do sistema necessitam que o cabo de sinal do servmotor esteja contectado no pino D10 do Franzino, enquanto o painel solar precisa estar no pino A2 do mesmo. Além disso, o servomotor deve ser ligado em 5 V, o que é feito através da mesma placa, utilizando os pinos de 5 V e GND; e o painel solar também deve ser aterrado na mesma placa. Essa, por sua vez, também deve ser alimentada por uma fonte de tensão contínua de 12 V.
 
 Feito a impressão e o acabamento dos modelos 3D, deve-se acoplar a engrenagem chanfrada ao suporte do painel solar utilizando dois parafusos com 1,4 mm de raio. Em seguida, coloca-se a menor engrenagem no eixo do servomotor, parafusando se necessário, e encaixa-se esse motor na base.
 
