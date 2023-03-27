@@ -10,6 +10,7 @@ Gabriel Lemes Molizane Almeida|770097
 Sarah Brennda Bispo Almeida|770161
 
  <div align="left">
+  
 ## Objetivos Gerais:
 Girassol - Desenvolver um sistema para maximizar a intensidade luminosa em uma placa solar através da movimentação da mesma em dois eixos. 
 
