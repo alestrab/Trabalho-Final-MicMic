@@ -1,6 +1,5 @@
 
 //Teste de leitura da placa
-int analogPin = A0; 
 int sol = 0; 
 
 void setup() {
@@ -8,7 +7,7 @@ void setup() {
 }
 
 void loop() {
-  sol = analogRead(analogPin);  
+  sol = analogRead(A2);  
   Serial.println(sol);
-  delay(100);          
+  delay(1000);          
 }
