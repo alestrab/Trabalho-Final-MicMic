@@ -23,7 +23,7 @@ Mini Placa Solar ZW 110X69, tensão de operação 5 V, 1W;
 
 Impressora 3D disponível no Espaço Maker do DC UFSCar;
 
-Para o microcontrolador, será verificada a possbilidade de utilizar uma placa Franzino construída por um dos integrantes do grupo. Contudo, já que a mesma ainda não se encontra presente, na primeira semana será utilizado um Arduino UNO.
+Como microcontrolador foi utilizado um Franzino. 
 
 ## Plano de Trabalho
 
@@ -62,7 +62,14 @@ Em seguida, irá iniciar o movimento no segundo eixo, que pode rotacionar a plac
 Utilizou-se software Sketchup para construção dos suportes e sistemas para rotação da placa solar. O modelamento das engrenagens foi feito com base em objetos já existentes em um banco de projetos do aplicativo, enquanto o suporte foi pensado de acordo com alguns diagramas construidos inicialmente em papel.
 
 O suporte para placa com controle de rotação foi impresso em um laboratório do departamento de Física da universidade, contudo, verificou-se que o segundo eixo de rotação não poderia ser implementado utilizando o servomotor planejado.
-O servomotor apresenta limitação de rotação, podendo realizar no máximo um giro de 180º. Quando comparado com as engrenagens colocadas, o segundo eixo conseguiria ao máximo realizar uma rotação de 45º, muito inferior ao planejado. Como esse problema só foi identificado durante os testes do primeiro eixo, não houve tempo para alteração do modelo. Assim, abandonou-se a utilização do segundo eixo e focou-se apenas no primeiro.
+O servomotor apresenta limitação de rotação, podendo realizar no máximo um giro de 180°. Quando comparado com as engrenagens colocadas, o segundo eixo conseguiria ao máximo realizar uma rotação de 45º, muito inferior ao planejado. Como esse problema só foi identificado durante os testes do primeiro eixo, não houve tempo para alteração do modelo. Assim, abandonou-se a utilização do segundo eixo e focou-se apenas no primeiro.'
+
+### Montagem do aparato
+
+Os códigos escritos para o funcionamento do sistema necessitam que o cabo de sinal do servmotor esteja contectado no pino A10 do Franzino, enquanto o painel solar precisa estar no pino A2 do mesmo. Além disso, o servomotor deve ser ligado em 5 V, o que é feito através da mesma placa, utilizando os pinos de 5 V e GND; e o painel solar também deve ser aterrado na mesma placa.
+
+Feito a impressão e o acabamento dos modelos 3D, coloca-se a menor engrenagem no eixo do motor, parafusando se necessário. Em seguida, deve-se implementar o código "teste_servo.cpp" no Franzino com o servomotor conectado como descrito anteriormente. Esse código serve para garantir que o eixo esteja na posição de 90°.
+
 
 
 
