@@ -59,6 +59,8 @@ Em seguida, irá iniciar o movimento no segundo eixo, que pode rotacionar a plac
 
 ### Construção do modelo 3D
 
+![Alt text](https://github.com/alestrab/Trabalho-Final-MicMic/blob/main/Imagens/Materiais/modelinho.png)
+
 Utilizou-se software Sketchup para construção dos suportes e sistemas para rotação da placa solar. O modelamento das engrenagens foi feito com base em objetos já existentes em um banco de projetos do aplicativo, enquanto o suporte foi pensado de acordo com alguns diagramas construidos inicialmente em papel.
 
 O suporte para placa com controle de rotação foi impresso em um laboratório do departamento de Física da universidade, contudo, verificou-se que o segundo eixo de rotação não poderia ser implementado utilizando o servomotor planejado.
