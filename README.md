@@ -61,10 +61,12 @@ Em seguida, irá iniciar o movimento no segundo eixo, que pode rotacionar a plac
 
 ![Alt text](https://github.com/alestrab/Trabalho-Final-MicMic/blob/main/Imagens/Materiais/modelinho.png)
 
-Utilizou-se software Sketchup para construção dos suportes e sistemas para rotação da placa solar. O modelamento das engrenagens foi feito com base em objetos já existentes em um banco de projetos do aplicativo, enquanto o suporte foi pensado de acordo com alguns diagramas construidos inicialmente em papel.
+Utilizou-se o software Sketchup para construção dos suportes e sistemas para rotação da placa solar. O modelamento das engrenagens foi feito com base em objetos já existentes em um banco de projetos do aplicativo, enquanto o suporte foi pensado de acordo com alguns diagramas construidos inicialmente em papel. No total temos três grandes áreas, que seriam o controle de inclinação (em vermelho), o suporte para fixação da placa (em azul), além do suporte para o eixo de rotação (em amarelo).
 
-O suporte para placa com controle de rotação foi impresso em um laboratório do departamento de Física da universidade, contudo, verificou-se que o segundo eixo de rotação não poderia ser implementado utilizando o servomotor planejado.
-O servomotor apresenta limitação de rotação, podendo realizar no máximo um giro de 180°. Quando comparado com as engrenagens colocadas, o segundo eixo conseguiria ao máximo realizar uma rotação de 45º, muito inferior ao planejado. Como esse problema só foi identificado durante os testes do primeiro eixo, não houve tempo para alteração do modelo. Assim, abandonou-se a utilização do segundo eixo e focou-se apenas no primeiro.'
+Tanto o controle de inclinação quanto o suporte de fixação foram impressos em um laboratório do departamento de Física da universidade, contudo, por ordens dos responsáveis do local, não foi possível realizar a impressão do último componente. Verificou-se também que o eixo de rotação não poderia ser implementado utilizando um servomotor, tal como fora planejado.
+
+O servomotor comprado apresenta limitação de rotação, podendo realizar no máximo um giro de 180°. Quando comparado com as engrenagens colocadas, a rotação máxima seria de 45º, muito inferior ao planejado de 360º. Como esse problema só foi identificado durante a implementação do controle de inclinação, não houve tempo para alteração do modelo, de modo que foi deixado de lado o controle de rotação.
+
 
 ### Montagem do aparato
 
