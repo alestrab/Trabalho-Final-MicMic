@@ -84,10 +84,10 @@ Primeiramente é importante ressaltar que a explicação que se segue é aquela 
 
 A fim de fazer o painel solar se direcionar para o máximo de intensidade luminosa, utilizaram-se dois modos de funcionamento:
 
-1. Ajuste local:
+1. **Ajuste local**:
 Nesse caso, dada uma posição inicial, o sistema procura o máximo local de intensidade. Para isso, comparam-se as intensidades luminosas em três pontos: o primeiro é aquele em que o sistema já se encontra, enquanto os outros dois são aqueles adjacentes a esse dado um passo, por exemplo de 5°. Comparando os três valores, o painel irá se direcionar para aquele com maior intensidade. Quando a posição de maior intensidade é a inicial, utiliza-se um atraso maior para a próxima análise. Esse modo de funcionamento, entretanto, só permite encontrar máximos locais.
 
-2. Scan:
+2. **Scan**:
 Para encontrar o máximo de intensidade geral é necessário fazer uma varredura de 0° a 180°, e é isso que esse modo faz. A rotina de scan só se ativa a cada intervalo de tempo, por exemplo 2 min. Nela, é feito um scan da intensidade luminosa no intervalo citado, e em seguida rotaciona-se o servomotor na posição do máximo.
 
 Para a regulagem do intervalo de tempo entre as rotinas, utilizou-se a biblioteca disponível em https://github.com/khoih-prog/TimerInterrupt . Além disso, durante os testes observou-se um problema nas medidas do painel solar, apresentando ruídos consideráveis. Para lidar com isso, cada medição foi então substituída por um conjunto de 50 medições realizadas em intervalos de 1 ms, cuja média era definida como a medição desejada. Isso foi suficiente para evitar os ruídos encontrados e, portanto, foi implementado em ambos os modos de funcionamento.
