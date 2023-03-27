@@ -17,6 +17,4 @@ void loop()
   Serial.println(servo);
   servo_10.write(90);
   delay(1000);
-  servo_10.write(0);
-  delay(1000);
 }
