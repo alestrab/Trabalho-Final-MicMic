@@ -55,6 +55,16 @@ A inclinação da placa pode ser alterada em 45° para os dois lados, tal que se
 
 Em seguida, irá iniciar o movimento no segundo eixo, que pode rotacionar a placa em 360°, seguindo mesmo critério, movimentação em passo constante até identificar o pico de intensidade luminosa na placa.
 
+## Realização do Plano de Trabalho
+
+### Construção do modelo 3D
+
+Utilizou-se software Sketchup para construção dos suportes e sistemas para rotação da placa solar. O modelamento das engrenagens foi feito com base em objetos já existentes em um banco de projetos do aplicativo, enquanto o suporte foi pensado de acordo com alguns diagramas construidos inicialmente em papel.
+
+O suporte para placa com controle de rotação foi impresso em um laboratório do departamento de Física da universidade, contudo, verificou-se que o segundo eixo de rotação não poderia ser implementado utilizando o servomotor planejado.
+O servomotor apresenta limitação de rotação, podendo realizar no máximo um giro de 180º. Quando comparado com as engrenagens colocadas, o segundo eixo conseguiria ao máximo realizar uma rotação de 45º, muito inferior ao planejado. Como esse problema só foi identificado durante os testes do primeiro eixo, não houve tempo para alteração do modelo. Assim, abandonou-se a utilização do segundo eixo e focou-se apenas no primeiro.
+
+
 
 
 
