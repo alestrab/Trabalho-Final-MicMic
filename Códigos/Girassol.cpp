@@ -1,5 +1,7 @@
 #include <Arduino.h>
 #include <Servo.h>
+//Código final para o funcionamento do projeto Girassol
+
 #define TIMER_INTERRUPT_DEBUG         2
 #define _TIMERINTERRUPT_LOGLEVEL_     0
 
