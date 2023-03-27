@@ -80,6 +80,10 @@ Antes de acoplar a engrenagem do painel solar à engrenagem do servomotor, deve-
 
 ### Funcionamento do sistema
 
+<p align="center">
+  <img width="478" height="432" src="https://github.com/alestrab/Trabalho-Final-MicMic/blob/main/Imagens/Funcionamento/modelo.gif">
+</p>
+
 Primeiramente é importante ressaltar que a explicação que se segue é aquela utilizada para o sistema com apenas um eixo. O caso de dois eixos seria análogo, modificando como seriam pegos os pontos de iluminação, e tendo de controlar dois servomotores. 
 
 A fim de fazer o painel solar se direcionar para o máximo de intensidade luminosa, utilizaram-se dois modos de funcionamento:
