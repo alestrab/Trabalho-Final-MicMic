@@ -23,7 +23,7 @@ Mini Placa Solar ZW 110X69, tensão de operação 5 V, 1W;
 
 Impressora 3D disponível no Espaço Maker do DC UFSCar;
 
-Como microcontrolador foi utilizado um Franzino. 
+Como microcontrolador foi utilizado um [Franzino](https://embarcados.com.br/franzino-open-hardware-de-baixo-custo/). O funcionamento do mesmo é o mesmo que um Arduino UNO, apenas necessita de uma placa externa para comunicação serial e não possui pinos de saída 3.3V.
 
 ## Plano de Trabalho
 
@@ -69,6 +69,8 @@ O servomotor comprado apresenta limitação de rotação, podendo realizar no m�
 
 
 ### Montagem do aparato
+
+![Alt text](https://github.com/alestrab/Trabalho-Final-MicMic/blob/main/Imagens/Circuitos/circuito.png)
 
 Os códigos escritos para o funcionamento do sistema necessitam que o cabo de sinal do servmotor esteja contectado no pino D10 do Franzino, enquanto o painel solar precisa estar no pino A2 do mesmo. Além disso, o servomotor deve ser ligado em 5 V, o que é feito através da mesma placa, utilizando os pinos de 5 V e GND; e o painel solar também deve ser aterrado na mesma placa. Essa, por sua vez, também deve ser alimentada por uma fonte de tensão contínua de 12 V.
 
