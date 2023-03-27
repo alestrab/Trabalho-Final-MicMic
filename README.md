@@ -65,7 +65,7 @@ Utilizou-se o software Sketchup para construção dos suportes e sistemas para r
 
 Tanto o controle de inclinação quanto o suporte de fixação foram impressos em um laboratório do departamento de Física da universidade, contudo, por ordens dos responsáveis do local, não foi possível realizar a impressão do último componente. Verificou-se também que o eixo de rotação não poderia ser implementado utilizando um servomotor, tal como fora planejado.
 
-O servomotor comprado apresenta limitação de rotação, podendo realizar no máximo um giro de 180°. Quando comparado com as engrenagens colocadas, a rotação máxima seria de 45º, muito inferior ao planejado de 360º. Como esse problema só foi identificado durante a implementação do controle de inclinação, não houve tempo para alteração do modelo, de modo que foi deixado de lado o controle de rotação.
+O servomotor comprado apresenta limitação de rotação, podendo realizar no máximo um giro de 180°. Quando comparado com as engrenagens colocadas, a rotação máxima seria de 45°, muito inferior ao planejado de 360º. Como esse problema só foi identificado durante a implementação do controle de inclinação, não houve tempo para alteração do modelo, de modo que foi deixado de lado o controle de rotação.
 
 
 ### Montagem do aparato
@@ -76,9 +76,15 @@ Feito a impressão e o acabamento dos modelos 3D, deve-se acoplar a engrenagem c
 
 Antes de acoplar a engrenagem do painel solar à engrenagem do servomotor, deve-se implementar o código do arquivo "teste_servo.cpp" no Franzino, com tudo devidamente conectado, como descrito anteriormente. Esse código tem como objetivo configurar o motor em sua posição de 90°. Feito isso, alinha-se o furo da engrenagem do painel com os furos do suporte, deixando a superfície plana do painel solar aproximadamente paralaela à base. Ao fazer isso, as engrenagens já irão se acoplar. Por fim, coloca-se o cilindro adequado passando pelos três furos. Assim, basta conectar o painel solar na placa como descrito anteriormente e implementar o código do arquivo "Girassol.cpp" para que o sistema funcione adequadamente.
 
+### Funcionamento do sistema
 
+Primeiramente é importante ressaltar que a explicação que se segue é aquela utilizada para o sistema com apenas um eixo. O caso de dois eixos seria análogo, modificando como seriam pegos os pontos de iluminação, e tendo de controlar dois servomotores. 
 
+A fim de fazer o painel solar se direcionar para o máximo de intensidade luminosa, utilizaram-se dois modos de funcionamento:
+ ####1. Ajuste local:
+Nesse caso, dada uma posição inicial, o sistema procura o máximo local de intensidade. Para isso, comparam-se as intensidades luminosas em três pontos: o primeiro é aquele em que o sistema já se encontra, enquanto os outros dois são aqueles adjacentes a esse dado um passo, por exemplo de 5°. Comparando os três valores, o painel irá se direcionar para aquele com maior intensidade. Quando a posição de maior intensidade é a inicial, utiliza-se um atraso maior para a próxima análise. Esse modo de funcionamento, entretanto, só permite encontrar máximos locais.
 
+####2. Scan:
+Para encontrar o máximo de intensidade geral é necessário fazer uma varredura de 0° a 180°, e é isso que esse modo faz. A rotina de scan só se ativa a cada intervalo de tempo, por exemplo 2 min. Nela, é feito um scan da intensidade luminosa no intervalo citado, e em seguida rotaciona-se o servomotor na posição do máximo.
 
-
-
+Para a regulagem do intervalo de tempo entre as rotinas, utilizou-se a biblioteca disponível em https://github.com/khoih-prog/TimerInterrupt . Além disso, durante os testes observou-se um problema nas medidas do painel solar, apresentando ruídos consideráveis. Para lidar com isso, cada medição foi então substituída por um conjunto de 50 medições realizadas em intervalos de 1 ms, cuja média era definida como a medição desejada. Isso foi suficiente para evitar os ruídos encontrados e, portanto, foi implementado em ambos os modos de funcionamento.
