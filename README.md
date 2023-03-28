@@ -60,6 +60,11 @@ Em seguida, irá iniciar o movimento no segundo eixo, que pode rotacionar a plac
 
 ## Realização do Plano de Trabalho
 
+### Vídeo
+
+O vídeo para apresentação do projeto Girassol e seu funcionamento está disponível no link: https://drive.google.com/file/d/1Eip5RgSgDWEnfYKRLRbnenWwQcjCiUuC/view?usp=share_link .
+
+
 ### Construção do modelo 3D
 
 ![Alt text](https://github.com/alestrab/Trabalho-Final-MicMic/blob/main/Imagens/Materiais/modelinho.png)
